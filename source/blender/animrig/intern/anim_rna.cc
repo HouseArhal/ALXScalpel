@@ -10,9 +10,9 @@
 
 #include "ANIM_rna.hh"
 
-#include "BLI_listbase.h"
-#include "BLI_math_base.h"
-#include "BLI_string.h"
+#include "BLI_listbase.hh"
+#include "BLI_math_base_c.hh"
+#include "BLI_string.hh"
 #include "BLI_vector.hh"
 
 #include "DNA_object_types.h"
@@ -87,7 +87,7 @@ std::string get_pose_bone_rna_path(const bPoseChannel &pose_bone)
 {
   char name_esc[sizeof(pose_bone.name) * 2];
   BLI_str_escape(name_esc, pose_bone.name, sizeof(name_esc));
-  return fmt::format("{}{}\"]", pose_bone_path_prefix, name_esc);
+  return fmt::format("pose.bones[\"{}\"]", name_esc);
 }
 
 std::optional<std::string> pose_bone_name_from_rna_path(const StringRefNull rna_path)
@@ -164,6 +164,30 @@ std::optional<eRotationModes> get_rotation_mode_from_rna_pointer(const PointerRN
 bool is_rotation_path(const StringRefNull rna_path)
 {
   return get_rotation_mode_from_path(rna_path).has_value();
+}
+
+std::optional<eRotationModes> get_rotation_mode_from_path(const StringRefNull rna_path)
+{
+  /* Accounting for the difference between objects and bones where the latter is e.g.
+   * `pose.bones["foo"].rotation_euler`. Assumes that rfind returns -1 if the string
+   * is not found. */
+  const int start_of_propname = rna_path.rfind(".") + 1;
+  if (!rna_path.substr(start_of_propname, rna_path.size()).startswith("rotation_")) {
+    return std::nullopt;
+  }
+  /* We already know that "rotation_" is in the rna_path, we can skip the full check for
+   * "rotation_quaternion", "rotation_euler" or "rotation_axis_angle". */
+  if (rna_path.endswith("quaternion")) {
+    return ROT_MODE_QUAT;
+  }
+  else if (rna_path.endswith("euler")) {
+    /* Cannot determine the rotation order from the path alone. */
+    return ROT_MODE_EUL;
+  }
+  else if (rna_path.endswith("axis_angle")) {
+    return ROT_MODE_AXISANGLE;
+  }
+  return std::nullopt;
 }
 
 static bool is_idproperty_keyable(const IDProperty *id_prop, PointerRNA *ptr, PropertyRNA *prop)

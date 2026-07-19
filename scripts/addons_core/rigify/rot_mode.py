@@ -56,11 +56,11 @@ from bpy_extras import anim_utils
 
 
 def add_keyframe_quat(
-        channelbag: ActionChannelbag,
-        quat: list[float],
-        frame: float,
-        bone_prefix: str,
-        group_name: str) -> None:
+    channelbag: ActionChannelbag,
+    quat: list[float],
+    frame: float,
+    bone_prefix: str,
+    group_name: str) -> None:
     for i in range(len(quat)):
         fc = channelbag.fcurves.ensure(bone_prefix + "rotation_quaternion", index=i, group_name=group_name)
         pos = len(fc.keyframe_points)
@@ -70,11 +70,11 @@ def add_keyframe_quat(
 
 
 def add_keyframe_euler(
-        channelbag: ActionChannelbag,
-        euler: list[float],
-        frame: float,
-        bone_prefix: str,
-        group_name: str) -> None:
+    channelbag: ActionChannelbag,
+    euler: list[float],
+    frame: float,
+    bone_prefix: str,
+    group_name: str) -> None:
     for i in range(len(euler)):
         fc = channelbag.fcurves.ensure(bone_prefix + "rotation_euler", index=i, group_name=group_name)
         pos = len(fc.keyframe_points)
@@ -301,3 +301,5 @@ def unregister():
     # Classes.
     for cls in classes:
         unregister_class(cls)
+
+    bpy.types.VIEW3D_MT_pose.remove(draw_convert_rotation)

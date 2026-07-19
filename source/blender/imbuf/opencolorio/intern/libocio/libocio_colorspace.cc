@@ -2,6 +2,7 @@
  *
  * SPDX-License-Identifier: GPL-2.0-or-later */
 
+#include "BLI_math_color_c.hh"
 #include "libocio_colorspace.hh"
 #include "OCIO_cpu_processor.hh"
 #include "error_handling.hh"

@@ -9,7 +9,7 @@
  */
 
 #pragma once
-
+#include "BLI_sys_types.hh"
 #include "BLI_string_ref.hh"
 
 namespace blender {
