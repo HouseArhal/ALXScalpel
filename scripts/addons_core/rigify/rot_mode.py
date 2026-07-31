@@ -30,19 +30,6 @@ blender.stackexchange.com/questions/40711/how-to-convert-quaternions-keyframes-t
 
 """
 
-# bl_info = {
-#     "name": "Rotation Mode Converter",
-#     "author": "Mario Mey / Mutant Bob",
-#     "version": (0, 2),
-#     "blender": (2, 91, 0),
-#     'location': 'Pose Mode -> Header -> Pose -> Convert Rotation Modes',
-#     "description": "Converts Animation between different rotation orders",
-#     "warning": "",
-#     "doc_url": "",
-#     "tracker_url": "https://github.com/MarioMey/rotation_mode_addon/",
-#     "category": "Animation",
-# }
-
 import bpy
 from bpy.props import (
     EnumProperty,
@@ -56,13 +43,10 @@ from bpy_extras import anim_utils
 
 
 def add_keyframe_quat(
-    channelbag: ActionChannelbag,
-    quat: list[float],
-    frame: float,
-    bone_prefix: str,
-    group_name: str) -> None:
+    channel_bag: ActionChannelbag, quat: list[float], frame: float, bone_prefix: str, group_name: str
+) -> None:
     for i in range(len(quat)):
-        fc = channelbag.fcurves.ensure(bone_prefix + "rotation_quaternion", index=i, group_name=group_name)
+        fc = channel_bag.fcurves.ensure(bone_prefix + "rotation_quaternion", index=i, group_name=group_name)
         pos = len(fc.keyframe_points)
         fc.keyframe_points.add(1)
         fc.keyframe_points[pos].co = [frame, quat[i]]
@@ -70,82 +54,79 @@ def add_keyframe_quat(
 
 
 def add_keyframe_euler(
-    channelbag: ActionChannelbag,
-    euler: list[float],
-    frame: float,
-    bone_prefix: str,
-    group_name: str) -> None:
+    channel_bag: ActionChannelbag, euler: list[float], frame: float, bone_prefix: str, group_name: str
+) -> None:
     for i in range(len(euler)):
-        fc = channelbag.fcurves.ensure(bone_prefix + "rotation_euler", index=i, group_name=group_name)
+        fc = channel_bag.fcurves.ensure(bone_prefix + "rotation_euler", index=i, group_name=group_name)
         pos = len(fc.keyframe_points)
         fc.keyframe_points.add(1)
         fc.keyframe_points[pos].co = [frame, euler[i]]
         fc.update()
 
 
-def frames_matching(channelbag, data_path):
+def frames_matching(channel_bag, data_path):
     frames = set()
-    for fc in channelbag.fcurves:
+    for fc in channel_bag.fcurves:
         if fc.data_path == data_path:
             fri = [kp.co[0] for kp in fc.keyframe_points]
             frames.update(fri)
     return frames
 
 
-def group_qe(_obj, channelbag, bone, bone_prefix, order):
-    """Converts only one group/bone in one channelbag - Quaternion to euler."""
+def group_qe(_obj, channel_bag, bone, bone_prefix, order):
+    """Converts only one group/bone in one channel_bag - Quaternion to euler."""
     # pose_bone = bone
     data_path = bone_prefix + "rotation_quaternion"
-    frames = frames_matching(channelbag, data_path)
+    frames = frames_matching(channel_bag, data_path)
 
     for fr in frames:
         quat = bone.rotation_quaternion.copy()
-        for fc in channelbag.fcurves:
+        for fc in channel_bag.fcurves:
             if fc.data_path == data_path:
                 quat[fc.array_index] = fc.evaluate(fr)
         euler = quat.to_euler(order)
 
-        add_keyframe_euler(channelbag, euler, fr, bone_prefix, bone.name)
+        add_keyframe_euler(channel_bag, euler, fr, bone_prefix, bone.name)
         bone.rotation_mode = order
 
 
-def group_eq(obj, channelbag, bone, bone_prefix, order):
-    """Converts only one group/bone in one channelbag - Euler to Quaternion."""
+def group_eq(obj, channel_bag, bone, bone_prefix, order):
+    """Converts only one group/bone in one channel_bag - Euler to Quaternion."""
     # pose_bone = bone
     data_path = bone_prefix + "rotation_euler"
-    frames = frames_matching(channelbag, data_path)
+    frames = frames_matching(channel_bag, data_path)
 
     for fr in frames:
         euler = bone.rotation_euler.copy()
-        for fc in channelbag.fcurves:
+        for fc in channel_bag.fcurves:
             if fc.data_path == data_path:
                 euler[fc.array_index] = fc.evaluate(fr)
         quat = euler.to_quaternion()
 
-        add_keyframe_quat(channelbag, quat, fr, bone_prefix, bone.name)
+        add_keyframe_quat(channel_bag, quat, fr, bone_prefix, bone.name)
         bone.rotation_mode = order
 
 
-def convert_curves_of_bone(obj, channelbag, bone, order):
+def convert_curves_of_bone(obj, channel_bag, bone, order):
     """Convert given bone's curves in given channelbag to given rotation order."""
     to_euler = False
     bone_prefix = ''
 
-    for fcurve in channelbag.fcurves:
+    for fcurve in channel_bag.fcurves:
         if fcurve.group and fcurve.group.name == bone.name:
 
             # If To-Euler conversion
             if order != 'QUATERNION':
                 if fcurve.data_path.endswith('rotation_quaternion'):
                     to_euler = True
-                    bone_prefix = fcurve.data_path[:-len('rotation_quaternion')]
+                    bone_prefix = fcurve.data_path[: -len('rotation_quaternion')]
                     break
 
             # If To-Quaternion conversion
             else:
                 if fcurve.data_path.endswith('rotation_euler'):
                     to_euler = True
-                    bone_prefix = fcurve.data_path[:-len('rotation_euler')]
+                    bone_prefix = fcurve.data_path[: -len('rotation_euler')]
                     break
 
     fcurves_to_remove = []
@@ -153,25 +134,25 @@ def convert_curves_of_bone(obj, channelbag, bone, order):
     # If To-Euler conversion
     if to_euler and order != 'QUATERNION':
         # Converts the group/bone from Quaternion to Euler
-        group_qe(obj, channelbag, bone, bone_prefix, order)
+        group_qe(obj, channel_bag, bone, bone_prefix, order)
 
         # Removes quaternion fcurves
-        for key in channelbag.fcurves:
+        for key in channel_bag.fcurves:
             if key.data_path == 'pose.bones["' + bone.name + '"].rotation_quaternion':
                 fcurves_to_remove.append(key)
 
     # If To-Quaternion conversion
     elif to_euler:
         # Converts the group/bone from Euler to Quaternion
-        group_eq(obj, channelbag, bone, bone_prefix, order)
+        group_eq(obj, channel_bag, bone, bone_prefix, order)
 
         # Removes euler fcurves
-        for key in channelbag.fcurves:
+        for key in channel_bag.fcurves:
             if key.data_path == 'pose.bones["' + bone.name + '"].rotation_euler':
                 fcurves_to_remove.append(key)
 
     for fcurve in fcurves_to_remove:
-        channelbag.fcurves.remove(fcurve)
+        channel_bag.fcurves.remove(fcurve)
 
     # Changes rotation mode to new one
     bone.rotation_mode = order
@@ -193,7 +174,7 @@ class POSE_OT_convert_rotation(bpy.types.Operator):
             ('YXZ', 'YXZ', 'YXZ Euler'),
             ('YZX', 'YZX', 'YZX Euler'),
             ('ZXY', 'ZXY', 'ZXY Euler'),
-            ('ZYX', 'ZYX', 'ZYX Euler')
+            ('ZYX', 'ZYX', 'ZYX Euler'),
         ],
         name='Convert To',
         description="The target rotation mode",
@@ -272,25 +253,22 @@ class POSE_OT_convert_rotation(bpy.types.Operator):
                 else:
                     action_slot = anim_utils.action_get_first_suitable_slot(action, 'OBJECT')
 
-            channelbag = anim_utils.action_get_channelbag_for_slot(action, action_slot)
-            if not channelbag:
+            channel_bag = anim_utils.action_get_channelbag_for_slot(action, action_slot)
+            if not channel_bag:
                 continue
 
             for pb in pose_bones:
-                convert_curves_of_bone(obj, channelbag, pb, self.target_rotation_mode)
+                convert_curves_of_bone(obj, channel_bag, pb, self.target_rotation_mode)
 
         return {'FINISHED'}
 
 
-classes = [
-    POSE_OT_convert_rotation
-]
+classes = [POSE_OT_convert_rotation]
 
 
 def register():
     from bpy.utils import register_class
 
-    # Classes.
     for cls in classes:
         register_class(cls)
 
@@ -298,8 +276,5 @@ def register():
 def unregister():
     from bpy.utils import unregister_class
 
-    # Classes.
     for cls in classes:
         unregister_class(cls)
-
-    bpy.types.VIEW3D_MT_pose.remove(draw_convert_rotation)
