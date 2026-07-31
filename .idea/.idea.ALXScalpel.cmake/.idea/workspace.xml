@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" GENERATION_DIR="$PROJECT_DIR$/../build_windows_x64_vc17_Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-G Ninja" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dca3cb7f-9f5d-4981-910d-3e7c7c06043c" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Batch.Ninja Install.executor": "Run",
+    "CMake Application.blender.executor": "Run",
+    "Custom Build Application.Ninja Full.executor": "Run",
+    "Custom Build Application.Ninja Install.executor": "Run",
+    "Git.Working.Tree.Tab.closed.by.user": "closed",
+    "Makefile Target.all.executor": "Run",
+    "Makefile Target.export_to_build.executor": "Run",
+    "Makefile Target.ninja.executor": "Run",
+    "Makefile Target.test_blender.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Native Executable.Blender Full.executor": "Run",
+    "Native Executable.Blender Install.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "Rebasing main",
+    "git.auto.fetch.suggestion.counter": "1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rider.code.cleanup.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dca3cb7f-9f5d-4981-910d-3e7c7c06043c" name="Changes" comment="" />
+      <created>1776114172135</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776114172135</updated>
+      <workItem from="1776114173541" duration="4656000" />
+      <workItem from="1776152795071" duration="7766000" />
+      <workItem from="1776172974144" duration="55000" />
+      <workItem from="1776173141276" duration="938000" />
+      <workItem from="1776174176382" duration="9068000" />
+      <workItem from="1776186720262" duration="9934000" />
+      <workItem from="1776247966203" duration="3487000" />
+      <workItem from="1776268838087" duration="619000" />
+      <workItem from="1776269587263" duration="8249000" />
+      <workItem from="1776607103256" duration="11000" />
+      <workItem from="1778930283892" duration="7729000" />
+      <workItem from="1778955980491" duration="6125000" />
+      <workItem from="1778976634218" duration="2714000" />
+      <workItem from="1779049140865" duration="7680000" />
+      <workItem from="1779091873991" duration="3995000" />
+      <workItem from="1779116345224" duration="11066000" />
+      <workItem from="1779299988685" duration="1383000" />
+      <workItem from="1779357611520" duration="6343000" />
+      <workItem from="1779466823950" duration="575000" />
+      <workItem from="1779475197913" duration="17800000" />
+      <workItem from="1779535306680" duration="172000" />
+      <workItem from="1779535547338" duration="1948000" />
+      <workItem from="1779537575183" duration="8793000" />
+      <workItem from="1779557435216" duration="794000" />
+      <workItem from="1779984920318" duration="13341000" />
+      <workItem from="1781872792519" duration="10397000" />
+      <workItem from="1782998574943" duration="9833000" />
+      <workItem from="1783012590992" duration="124000" />
+      <workItem from="1783012773561" duration="8005000" />
+      <workItem from="1783026287170" duration="749000" />
+      <workItem from="1783076554694" duration="3000" />
+      <workItem from="1783085409889" duration="6029000" />
+      <workItem from="1783150104195" duration="7087000" />
+      <workItem from="1783163244707" duration="324000" />
+      <workItem from="1783163590557" duration="7549000" />
+      <workItem from="1783329888834" duration="968000" />
+      <workItem from="1783336746462" duration="2254000" />
+      <workItem from="1783549902590" duration="256000" />
+      <workItem from="1783550244122" duration="1029000" />
+      <workItem from="1784384283254" duration="7457000" />
+      <workItem from="1784394167191" duration="848000" />
+      <workItem from="1784401085141" duration="1526000" />
+      <workItem from="1784452033457" duration="1825000" />
+      <workItem from="1784456137438" duration="8275000" />
+      <workItem from="1785527756494" duration="2787000" />
+      <workItem from="1785530619998" duration="610000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: interface_template_list.cc re-implemented TemplateUIList Grid layout">
+      <option name="closed" value="true" />
+      <created>1779501037892</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779501037892</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix: .gitignore missing">
+      <option name="closed" value="true" />
+      <created>1779501961714</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779501961714</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit">
+      <option name="closed" value="true" />
+      <created>1783011381528</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783011381528</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".gitignore">
+      <option name="closed" value="true" />
+      <created>1783019364595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783019364595</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added /source">
+      <option name="closed" value="true" />
+      <created>1783019527938</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783019527938</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added /scripts">
+      <option name="closed" value="true" />
+      <created>1783019674965</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783019674965</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added project basis">
+      <option name="closed" value="true" />
+      <created>1783019771809</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783019771809</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added /.idea">
+      <option name="closed" value="true" />
+      <created>1783021319277</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783021319277</updated>
+    </task>
+    <task id="LOCAL-00009" summary="space_view3d.py">
+      <option name="closed" value="true" />
+      <created>1784387863436</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1784387863436</updated>
+    </task>
+    <task id="LOCAL-00010" summary="merged blender 5.2 release patch">
+      <option name="closed" value="true" />
+      <created>1784394272296</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1784394272296</updated>
+    </task>
+    <task id="LOCAL-00011" summary="improv: space_view3d.py added vertex and texture paint operators with relevant buttons">
+      <option name="closed" value="true" />
+      <created>1784394359904</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1784394359904</updated>
+    </task>
+    <task id="LOCAL-00012" summary="pycharm being pycharm">
+      <option name="closed" value="true" />
+      <created>1784394379586</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1784394379586</updated>
+    </task>
+    <task id="LOCAL-00013" summary="5.3 patch + convert rotation + library rename to _c">
+      <option name="closed" value="true" />
+      <created>1784464668274</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1784464668274</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added missing LFS test blend file">
+      <option name="closed" value="true" />
+      <created>1784465209496</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1784465209497</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix tests">
+      <option name="closed" value="true" />
+      <created>1784465968825</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1784465968825</updated>
+    </task>
+    <task id="LOCAL-00016" summary="improv: new rotation conversion from blender 5.3 + generic syntax improvement">
+      <option name="closed" value="true" />
+      <created>1785529274405</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1785529274405</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/lib/windows_x64" />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat: interface_template_list.cc re-implemented TemplateUIList Grid layout" />
+    <MESSAGE value="fix: .gitignore" />
+    <MESSAGE value="fix: .gitignore missing entries for build directories" />
+    <MESSAGE value="commit" />
+    <MESSAGE value=".gitignore" />
+    <MESSAGE value="added .gitignore" />
+    <MESSAGE value="added /source" />
+    <MESSAGE value="added /scripts" />
+    <MESSAGE value="added project basis" />
+    <MESSAGE value="added /.idea" />
+    <MESSAGE value="space_view3d.py" />
+    <MESSAGE value="merged blender 5.2 release patch" />
+    <MESSAGE value="improv: space_view3d.py added vertex and texture paint operators with relevant buttons" />
+    <MESSAGE value="pycharm being pycharm" />
+    <MESSAGE value="5.3 patch + convert rotation + library rename to _c" />
+    <MESSAGE value="added missing LFS test blend file" />
+    <MESSAGE value="fix tests" />
+    <MESSAGE value="improv: new rotation conversion from blender 5.3 + generic syntax improvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="improv: new rotation conversion from blender 5.3 + generic syntax improvement" />
+  </component>
+</project>
