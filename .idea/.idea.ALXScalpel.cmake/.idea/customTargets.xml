@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CLionExternalBuildManager">
+    <target id="c4947d71-2bb7-4885-ae17-2dd7f45f999a" name="Blender" defaultType="TOOL">
+      <configuration id="b1b52fe2-16c1-403f-b51e-a1635fc36c81" name="Blender">
+        <build type="TOOL">
+          <tool actionId="Tool_External Tools_BLMake" />
+        </build>
+      </configuration>
+    </target>
+  </component>
+</project>
