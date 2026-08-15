@@ -6046,6 +6046,7 @@ class ALX_OT_ObjectMode_SetToPose(bpy.types.Operator):
                 armature.hide_viewport = False
 
                 armature.select_set(True, view_layer=context.view_layer)
+            context.view_layer.objects.active = armatures[0]
 
             bpy.ops.object.mode_set(mode="POSE")
 
@@ -6346,7 +6347,7 @@ class VIEW3D_MT_object_mode_pie(Menu):
 
             # WEIGHT PAINT
             if context.mode != "PAINT_WEIGHT":
-                menu_pie.operator(ALX_OT_ObjectMode_SetToPaintWeight.bl_idname, text="A-WPAINT", icon="WPAINT_HLT")
+                menu_pie.operator(ALX_OT_ObjectMode_SetToPaintWeight.bl_idname, text="SMART-WPAINT", icon="WPAINT_HLT")
             else:
                 if context.mode == "PAINT_WEIGHT":
                     menu_pie.box().label(text="[Mode] | [Weight Paint]")
