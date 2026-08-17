@@ -29,72 +29,133 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="1" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Valerie-Bosco"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Valerie-Bosco&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Valerie-Bosco/ALXScalpel.git",
-    "accountId": "c3f10312-f3ef-43fe-80d5-5c1db0bd620b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Valerie-Bosco/ALXScalpel.git&quot;,
+    &quot;accountId&quot;: &quot;c3f10312-f3ef-43fe-80d5-5c1db0bd620b&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.4696012505349781E-8" />
+      <entry key="MS500" value="0.027835711501818856" />
+      <entry key="S2" value="0.9362490760205426" />
+      <entry key="S5" value="4.278686169575818" />
+      <entry key="S10" value="11.41239502456642" />
+      <entry key="S30" value="31.773022697732085" />
+      <entry key="S60" value="48.627708640620384" />
+      <entry key="M2" value="64.31713849361677" />
+      <entry key="M5" value="82.35763991978652" />
+      <entry key="M10" value="101.9194950717024" />
+      <entry key="M15" value="115.26938298339658" />
+      <entry key="M30" value="135.79789117262916" />
+      <entry key="H1" value="150.06408743508374" />
+      <entry key="H2" value="158.5156306198043" />
+      <entry key="H4" value="163.12069712574234" />
+      <entry key="D1" value="167.16701734642854" />
+      <entry key="W1" value="167.88050872914084" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000000011267" />
+      <entry key="S60" value="1.0000010614246089" />
+      <entry key="M2" value="1.001030254632981" />
+      <entry key="M5" value="1.063852488933047" />
+      <entry key="M10" value="1.2526905002825532" />
+      <entry key="M15" value="1.3996924488685414" />
+      <entry key="M30" value="1.6322123447612689" />
+      <entry key="H1" value="1.7951178181636172" />
+      <entry key="H2" value="1.89169379170409" />
+      <entry key="H4" value="1.944295394304178" />
+      <entry key="D1" value="1.9904927748193357" />
+      <entry key="W1" value="1.9986362582637207" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.4416414325041702E-4" />
+      <entry key="MS500" value="0.17278752172652426" />
+      <entry key="S2" value="1.3706425349238351" />
+      <entry key="S5" value="4.939078566836873" />
+      <entry key="S10" value="12.21011263787911" />
+      <entry key="S30" value="32.6908957984436" />
+      <entry key="S60" value="49.58029960312787" />
+      <entry key="M2" value="65.29117673878952" />
+      <entry key="M5" value="83.40855870352988" />
+      <entry key="M10" value="103.16400865646862" />
+      <entry key="M15" value="116.66278911675772" />
+      <entry key="M30" value="137.42630699213612" />
+      <entry key="H1" value="151.85707851678816" />
+      <entry key="H2" value="160.4061932683448" />
+      <entry key="H4" value="165.0644084773919" />
+      <entry key="D1" value="169.15741007555553" />
+      <entry key="W1" value="169.87913062701585" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3HHja2zLcWGcoeS9AN0LrcDPD7X" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Batch.Ninja Install.executor": "Run",
-    "CMake Application.blender.executor": "Run",
-    "Custom Build Application.Ninja Full.executor": "Run",
-    "Custom Build Application.Ninja Install.executor": "Run",
-    "Git.Working.Tree.Tab.closed.by.user": "closed",
-    "Makefile Target.all.executor": "Run",
-    "Makefile Target.export_to_build.executor": "Run",
-    "Makefile Target.ninja.executor": "Run",
-    "Makefile Target.test_blender.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Native Executable.Blender Full.executor": "Run",
-    "Native Executable.Blender Install.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "main",
-    "git.auto.fetch.suggestion.counter": "1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "rider.code.cleanup.on.save": "true",
-    "settings.editor.selected.configurable": "CLionExternalConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Batch.Ninja Install.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.blender.executor&quot;: &quot;Run&quot;,
+    &quot;Custom Build Application.Ninja Full.executor&quot;: &quot;Run&quot;,
+    &quot;Custom Build Application.Ninja Install.executor&quot;: &quot;Run&quot;,
+    &quot;Git.Working.Tree.Tab.closed.by.user&quot;: &quot;closed&quot;,
+    &quot;Makefile Target.all.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.export_to_build.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.ninja.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.test_blender.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Native Executable.Blender Full.executor&quot;: &quot;Run&quot;,
+    &quot;Native Executable.Blender Install.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CLionExternalConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Blender" type="CLionExternalRunConfiguration" factoryName="Application" PROGRAM_PARAMS="ninja full" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ALXScalpel" TARGET_NAME="Blender" CONFIG_NAME="Blender" RUN_PATH="$PROJECT_DIR$/make.bat">
       <method v="2">
@@ -161,6 +222,7 @@
       <workItem from="1785527756494" duration="2787000" />
       <workItem from="1785530619998" duration="1297000" />
       <workItem from="1785531956969" duration="1824000" />
+      <workItem from="1787003246452" duration="508000" />
     </task>
     <task id="LOCAL-00001" summary="feat: interface_template_list.cc re-implemented TemplateUIList Grid layout">
       <option name="closed" value="true" />
