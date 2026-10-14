@@ -297,7 +297,7 @@ def work_tree_update_upstream_workflow(args: argparse.Namespace, use_fetch: bool
     if not make_utils.git_branch_exists(args.git_command, upstream_branch):
         return "no_branch"
 
-    retcode = call((args.git_command, "merge", "--ff-only", upstream_branch), exit_on_error=False)
+    retcode = call((args.git_command, "merge", "--allow-unrelated-histories", upstream_branch), exit_on_error=False)
     if retcode != 0:
         return "Unable to fast forward\n"
 
