@@ -23,6 +23,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dca3cb7f-9f5d-4981-910d-3e7c7c06043c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ALXScalpel.cmake/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ALXScalpel.cmake/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/.clang-format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/windows_x64" beforeDir="false" afterPath="$PROJECT_DIR$/lib/windows_x64" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,9 @@
     &quot;accountId&quot;: &quot;c3f10312-f3ef-43fe-80d5-5c1db0bd620b&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/source/blender/geometry/GEO_join_geometries.hh" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -223,6 +228,12 @@
       <workItem from="1785530619998" duration="1297000" />
       <workItem from="1785531956969" duration="1824000" />
       <workItem from="1787003246452" duration="508000" />
+      <workItem from="1787008402242" duration="686000" />
+      <workItem from="1787010904228" duration="5108000" />
+      <workItem from="1791653839447" duration="1826000" />
+      <workItem from="1791975038992" duration="123000" />
+      <workItem from="1791976313043" duration="2663000" />
+      <workItem from="1791979556009" duration="3863000" />
     </task>
     <task id="LOCAL-00001" summary="feat: interface_template_list.cc re-implemented TemplateUIList Grid layout">
       <option name="closed" value="true" />
@@ -360,7 +371,23 @@
       <option name="project" value="LOCAL" />
       <updated>1785531509332</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add: build_files for make">
+      <option name="closed" value="true" />
+      <created>1787008524898</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1787008524898</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add: lib submodule">
+      <option name="closed" value="true" />
+      <created>1787013463809</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1787013463809</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +477,9 @@
     <MESSAGE value="fix tests" />
     <MESSAGE value="improv: new rotation conversion from blender 5.3 + generic syntax improvement" />
     <MESSAGE value="AAAAAAAA" />
-    <option name="LAST_COMMIT_MESSAGE" value="AAAAAAAA" />
+    <MESSAGE value="add: build_files for make" />
+    <MESSAGE value="add: lib submodule" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: lib submodule" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
